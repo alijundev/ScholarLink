@@ -20,7 +20,11 @@
     header {
       background-color: #fef9e7;
       padding: 1.5rem 2rem;
-      
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 99;
     }
 
     nav {
@@ -401,18 +405,13 @@
   <header>
     <nav>
       <a href="#" class="logo">
-        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 14L8 10H16L12 14Z" fill="currentColor"/>
-          <path d="M4 4H20V6H4V4Z" fill="currentColor"/>
-          <circle cx="12" cy="18" r="2" fill="currentColor"/>
-        </svg>
         SchoolarLink
       </a>
       <ul class="nav-links">
         <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#masalah">Masalah</a></li>
+        <li><a href="#solusi">Solusi</a></li>
         <li><a href="#fitur">Fitur</a></li>
-        <li><a href="#manfaat">Manfaat</a></li>
-        <li><a href="#tujuan">Tujuan</a></li>
       </ul>
     </nav>
   </header>
@@ -432,7 +431,7 @@
   </section>
 
   <!-- Problem Section -->
-  <section class="problem-section">
+  <section class="problem-section" id="masalah">
     <div class="problem-content">
       <div class="section-header">Sulit mencari informasi beasiswa?</div>
       <p class="section-subtitle">Kami memahami tantangan yang kamu hadapi dalam mencari beasiswa</p>
@@ -457,7 +456,7 @@
   </section>
 
   <!-- Solution Section -->
-  <section class="solution-section">
+  <section class="solution-section" id="solusi">
     <div class="solution-content">
       <div class="section-header">SchoolarLink adalah solusinya 🎓</div>
       <p class="section-subtitle">Platform all-in-one untuk semua kebutuhan pencarian beasiswamu</p>
